@@ -9,7 +9,7 @@ type P = {
     aaLarge?: boolean,
   },
 };
-const AccessibilityBadge = ({ level }: P) => {
+const AccessibilityBadge = ({ level, color }: P) => {
   let text;
   switch (true) {
     case level.aaa:
@@ -25,7 +25,7 @@ const AccessibilityBadge = ({ level }: P) => {
       text = null;
   }
   return text &&
-    <Badge>
+    <Badge color={color}>
       {text}
     </Badge>;
 };

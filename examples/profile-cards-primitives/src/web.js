@@ -1,6 +1,7 @@
 import React from 'react';
 import Profile from './components/Profile';
 import Space from './components/Space';
+import Header from './components/Header';
 import { spacing } from './designSystem';
 import DATA from './data';
 
@@ -23,6 +24,7 @@ export default () => (
           <Profile key={user.screen_name} user={user} />
         </Space>
       ))}
+      <Header />
     </div>
   </div>
 );

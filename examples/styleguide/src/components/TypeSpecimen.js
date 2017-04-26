@@ -8,19 +8,20 @@ type P = {
   style: any,
 };
 const TypeSpecimen = ({ name, style }: P) => (
-  <View name={`TypeSpecimen-${name}`} style={{ flexDirection: 'row', marginBottom: 24 }}>
-    <View style={{ width: 100 }}>
+  <View name={`TypeSpecimen-${name}`} style={{ flexDirection: 'row', alignItems: 'flex-end', marginBottom: 24 }}>
+    <Text
+      style={{
+        ...style
+      }}
+    >
+      {(name === 'Small Caps') ? name.toUpperCase() : name }
+    </Text>
+    <View style={{ marginLeft: 20 }}>
       <Label>
         {`${style.fontSize} / ${style.lineHeight}`}
       </Label>
     </View>
-    <Text
-      style={{
-        ...style,
-      }}
-    >
-      {name}
-    </Text>
+
   </View>
 );
 

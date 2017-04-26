@@ -1,18 +1,19 @@
 /* @flow */
 import React from 'react';
+import designSystem from '../designSystem';
 import { Text } from 'react-sketchapp';
 
 type P = {
   bold?: boolean,
   children?: any,
 };
-const Label = ({ bold, children }: P) => (
+const Label = ({ bold, color, children }: P) => (
   <Text
     style={{
-      color: '#333',
-      fontWeight: bold ? 'bold' : 'normal',
-      fontSize: 16,
-      lineHeight: 24,
+      ...designSystem.fonts.Body,
+      fontWeight: bold ? '500' : 'normal',
+      marginBottom: 0,
+      color: color
     }}
   >
     {children}
