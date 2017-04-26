@@ -2,8 +2,7 @@
 /* eslint-disable react/jsx-filename-extension, import/no-named-as-default-member */
 
 import React from 'react';
-import { Artboard, render, TextStyles } from 'react-sketchapp';
-import { View } from 'react-primitives'
+import { Artboard, render, TextStyles, View } from 'react-sketchapp';
 import designSystem from './designSystem';
 import type { DesignSystem } from './designSystem';
 
