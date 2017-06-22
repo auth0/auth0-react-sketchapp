@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const Header = ({ subtitle, items, appendButtons, mode, bgColor, alignNav, login }: P) => (
+const Header = ({ subtitle, items, appendButtons, mode, bgColor, login }: P) => (
   <View name='header' style={[ styles.header, { backgroundColor: bgColor || colors['BG Light'] } ]}>
     <View name='container' style={styles.container}>
       <View name='brand' style={styles.brand}>
