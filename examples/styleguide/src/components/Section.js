@@ -7,10 +7,11 @@ type P = {
   title: string,
   children?: any,
 };
-const Section = ({ title, children }: P) => (
-  <View style={{ marginBottom: 96, flexDirection: 'row' }}>
-    <View style={{ width: 200 }}>
+const Section = ({ title, description, children }: P) => (
+  <View style={{ marginBottom: 96, marginRight: 50, flexDirection: 'row' }}>
+    <View style={{ width: 400, paddingRight: 90 }}>
       <Label bold>{title}</Label>
+      <Label>{description}</Label>
     </View>
     <View>
       {children}

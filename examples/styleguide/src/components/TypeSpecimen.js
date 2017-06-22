@@ -14,7 +14,7 @@ const TypeSpecimen = ({ name, style }: P) => (
         ...style
       }}
     >
-      {(name === 'Small Caps') ? name.toUpperCase() : name }
+      {(name === 'SC') ? name.toUpperCase() : name }
     </Text>
     <View style={{ marginLeft: 20 }}>
       <Label>

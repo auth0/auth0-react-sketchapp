@@ -47,12 +47,12 @@ const Swatch = ({ color, name }: P) => (
         }}
       >
         <Text style={{
-          ...designSystem.fonts['Small Caps'],
+          ...designSystem.fonts['SC'],
           letterSpacing: 0,
           color: textColor(color.hex)
         }}>{name}</Text>
         <Text style={{
-          ...designSystem.fonts['Small Caps'],
+          ...designSystem.fonts['SC'],
           fontWeight: 'normal',
           letterSpacing: 0,
           color: textColor(color.hex)

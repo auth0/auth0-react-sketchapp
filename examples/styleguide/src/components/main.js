@@ -14,16 +14,6 @@ import ButtonSample from './components/ButtonSample';
 import Section from './components/Section';
 import TypeSpecimen from './components/TypeSpecimen';
 
-//To-do
-//Tables
-//Footer
-//Dropdown with avatar
-//Spinner
-//Alerts
-//UI switch
-//Breadcrumbs
-//Forms
-
 const Document = ({ system }: { system: DesignSystem }) => (
   <Artboard name="Basics" style={{padding: 100}}>
     <View name="Intro" style={{ width: 420, marginBottom: system.spacing * 8, fontFamily: 'Fakt Pro' }}>
@@ -56,23 +46,9 @@ const Document = ({ system }: { system: DesignSystem }) => (
       </View>
     </Section>
 
-    <Section title="Header" description="Possible types of configurations for the Auth0 Header">
+    <Section title="Header">
+      <Header subtitle="Account Center" items={['Platform', 'Pricing']} />
       <Header />
-      
-      <Header mode="dark" bgColor={system.colors['BG Dark'].hex} />
-      
-      <Header subtitle="docs" bgColor='rgba(0,0,0,0.1)' />
-      
-      <Header 
-        subtitle="Status"
-        items={['Link 1', 'Link 2']} 
-        appendButtons={{
-          'Sign Up': {
-            type: 'Success'
-          }
-        }}
-        login={false}
-      />
     </Section>
   </Artboard>
 );

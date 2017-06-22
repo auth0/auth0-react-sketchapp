@@ -36,13 +36,13 @@ const fontWeights = {
 export const buttons = {
   sizes: {
     Large: {
-      paddingLeft: spacing * 2,
-      paddingRight: spacing * 2,
+      paddingLeft: spacing,
+      paddingRight: spacing,
       height: spacing * 4
     },
     Medium: {
-      paddingLeft: spacing * 2,
-      paddingRight: spacing * 2,
+      paddingLeft: spacing,
+      paddingRight: spacing,
       height: spacing * 3
     },
     Small: {
@@ -60,20 +60,32 @@ export const buttons = {
   types: {
     Success: {
       backgroundColor: colors.Red,
-      color: 'white'
+      color: 'white',
+      letterSpacing: 1,
     },
     Primary: {
       backgroundColor: colors['Light Blue'],
-      color: 'white'
+      color: 'white',
+      letterSpacing: 1,
     },
     Disabled: {
       backgroundColor: '#CCCCCC',
-      color: 'rgba(0,0,0,.26)'
+      color: 'rgba(0,0,0,.26)',
+      letterSpacing: 1,
     },
     Transparent: {
       backgroundColor: 'transparent',
       borderWidth: 1,
-      borderColor: '#333'
+      letterSpacing: 1,
+      borderColor: '#444',
+    },
+    Link: {
+      backgroundColor: 'transparent',
+      borderWidth: 1,
+      borderColor: '#444',
+      fontFamily: fontFamilies.body,
+      letterSpacing: 0,
+      fontWeight: 'normal'
     }
   }
 }
@@ -115,7 +127,7 @@ export const fonts = {
     lineHeight: 24,
     marginBottom: 24,
   },
-  'Small Caps': {
+  SC: {
     color: colors.Base,
     fontSize: typeSizes[6],
     fontFamily: fontFamilies.body,

@@ -24,7 +24,7 @@ const Badge = ({ children, filled, color }: P) => (
   >
     <Text
       style={{
-        ...designSystem.fonts['Small Caps'],
+        ...designSystem.fonts['SC'],
         marginTop: -3,
         color: color
       }}
