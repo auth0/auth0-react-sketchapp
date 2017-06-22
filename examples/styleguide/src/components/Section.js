@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { View } from 'react-sketchapp';
-import Label from './Label';
+import SectionTitle from './SectionTitle';
 
 type P = {
   title: string,
@@ -10,8 +10,8 @@ type P = {
 const Section = ({ title, description, children }: P) => (
   <View style={{ marginBottom: 96, marginRight: 50, flexDirection: 'row' }}>
     <View style={{ width: 400, paddingRight: 90 }}>
-      <Label bold>{title}</Label>
-      <Label>{description}</Label>
+      <SectionTitle bold>{title}</SectionTitle>
+      <SectionTitle>{description}</SectionTitle>
     </View>
     <View>
       {children}

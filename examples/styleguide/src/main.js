@@ -6,7 +6,7 @@ import { Artboard, render, TextStyles, View } from 'react-sketchapp';
 import designSystem from './designSystem';
 import type { DesignSystem } from './designSystem';
 
-import Label from './components/Label';
+import SectionTitle from './components/SectionTitle';
 import Header from './components/Header';
 import Palette from './components/Palette';
 import Button from './components/Button';
@@ -14,6 +14,7 @@ import ButtonSample from './components/ButtonSample';
 import Section from './components/Section';
 import TypeSpecimen from './components/TypeSpecimen';
 import Alert from './components/Alert';
+import Label from './components/Label';
 
 //To-do
 //Tables
@@ -28,10 +29,10 @@ import Alert from './components/Alert';
 const Document = ({ system }: { system: DesignSystem }) => (
   <Artboard name="Basics" style={{padding: 100}}>
     <View name="Intro" style={{ width: 420, marginBottom: system.spacing * 8, fontFamily: 'Fakt Pro' }}>
-      <Label>
-        This is an example react-sketchapp document, showing how to
+      <SectionTitle>
+        Hola Juli This is an example react-sketchapp document, showing how to
         render a styleguide from a data representation of your design system.
-      </Label>
+      </SectionTitle>
     </View>
 
     <Section title="Type Styles">
@@ -78,11 +79,20 @@ const Document = ({ system }: { system: DesignSystem }) => (
 
     <Section title="Alerts">
       {['default', 'success', 'info', 'warning', 'danger'].map(type =>
-        <Alert type={type}>
+        <Alert type={type} key={type}>
           Well done! This alert will show you some extra information.
         </Alert>
       )}
     </Section>
+
+    <Section title="Labels">
+      {['default', 'primary', 'success', 'info', 'warning', 'danger'].map(type =>
+        <Label type={type} key={type}>
+          {_.toUpper(type)}
+        </Label>
+      )}
+    </Section>
+
   </Artboard>
 );
 

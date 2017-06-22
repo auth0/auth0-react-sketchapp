@@ -3,7 +3,7 @@ import React from 'react';
 import { View } from 'react-sketchapp';
 import AccessibilityBadge from './AccessibilityBadge';
 import designSystem from '../designSystem';
-import Label from './Label';
+import SectionTitle from './SectionTitle';
 import { Text } from 'react-sketchapp';
 import type { Color } from '../processColor';
 import chroma from 'chroma-js';

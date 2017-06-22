@@ -1,7 +1,7 @@
 /* @flow */
 import React from 'react';
 import { View, Text } from 'react-sketchapp';
-import Label from './Label';
+import SectionTitle from './SectionTitle';
 
 type P = {
   name: string,
@@ -17,9 +17,9 @@ const TypeSpecimen = ({ name, style }: P) => (
       {(name === 'SC') ? name.toUpperCase() : name }
     </Text>
     <View style={{ marginLeft: 20 }}>
-      <Label>
+      <SectionTitle>
         {`${style.fontSize} / ${style.lineHeight}`}
-      </Label>
+      </SectionTitle>
     </View>
 
   </View>
