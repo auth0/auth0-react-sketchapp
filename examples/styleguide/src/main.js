@@ -13,6 +13,7 @@ import Button from './components/Button';
 import ButtonSample from './components/ButtonSample';
 import Section from './components/Section';
 import TypeSpecimen from './components/TypeSpecimen';
+import Alert from './components/Alert';
 
 //To-do
 //Tables
@@ -73,6 +74,14 @@ const Document = ({ system }: { system: DesignSystem }) => (
         }}
         login={false}
       />
+    </Section>
+
+    <Section title="Alerts">
+      {['default', 'success', 'info', 'warning', 'danger'].map(type =>
+        <Alert type={type}>
+          Well done! This alert will show you some extra information.
+        </Alert>
+      )}
     </Section>
   </Artboard>
 );
