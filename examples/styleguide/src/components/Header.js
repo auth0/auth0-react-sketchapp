@@ -1,8 +1,8 @@
 /* @flow */
 import React from 'react';
 import { View, StyleSheet, Text, Image } from 'react-sketchapp';
-import { fonts, colors, buttons, spacing } from '../designSystem';
-import Button from './Button';
+import { fonts, colors, spacing } from '../designSystem';
+import Button, { buttons } from './Button';
 
 
 // To-do

@@ -1,13 +1,13 @@
 /* @flow */
 import React from 'react';
 import { View } from 'react-sketchapp';
-import { spacing, buttons } from '../designSystem';
-import Button from './Button'
+import { spacing } from '../designSystem';
+import Button, { buttons } from './Button'
 import type { Color } from '../processColor';
 
-
-
-const ButtonSample = ({ type }: P) => (
+const ButtonSample = ({ type }: {
+  type: 'success' | 'primary' | 'disabled' | 'transparent' | 'link'
+}) => (
   <View style={{
     marginBottom: spacing * 2,
     marginRight: spacing * 3

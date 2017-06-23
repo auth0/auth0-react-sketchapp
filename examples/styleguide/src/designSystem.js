@@ -25,7 +25,7 @@ const typeSizes = [80, 48, 36, 24, 20, 16, 14];
 
 export const spacing = 16;
 
-const fontFamilies = {
+export const fontFamilies = {
   display: 'Fakt Pro',
   body: 'Fakt Pro',
 };
@@ -34,63 +34,6 @@ const fontWeights = {
   regular: 'normal',
   bold: '500',
 };
-
-export const buttons = {
-  sizes: {
-    Large: {
-      paddingLeft: spacing,
-      paddingRight: spacing,
-      height: spacing * 4
-    },
-    Medium: {
-      paddingLeft: spacing,
-      paddingRight: spacing,
-      height: spacing * 3
-    },
-    Small: {
-      paddingLeft: spacing,
-      paddingRight: spacing,
-      height: spacing * 2.5
-    },
-    Micro: {
-      paddingLeft: spacing,
-      paddingRight: spacing,
-      height: spacing * 2,
-      fontSize: 11
-    }
-  },
-  types: {
-    Success: {
-      backgroundColor: colors.Red,
-      color: 'white',
-      letterSpacing: 1,
-    },
-    Primary: {
-      backgroundColor: colors['Light Blue'],
-      color: 'white',
-      letterSpacing: 1,
-    },
-    Disabled: {
-      backgroundColor: '#CCCCCC',
-      color: 'rgba(0,0,0,.26)',
-      letterSpacing: 1,
-    },
-    Transparent: {
-      backgroundColor: 'transparent',
-      borderWidth: 1,
-      letterSpacing: 1,
-      borderColor: '#444',
-    },
-    Link: {
-      backgroundColor: 'transparent',
-      borderWidth: 1,
-      borderColor: '#444',
-      fontFamily: fontFamilies.body,
-      letterSpacing: 0,
-      fontWeight: 'normal'
-    }
-  }
-}
 
 export const fonts = {
   Headline: {
@@ -148,7 +91,6 @@ export default {
     {},
   ),
   fonts,
-  buttons,
   spacing,
 };
 
