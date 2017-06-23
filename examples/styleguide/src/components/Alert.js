@@ -24,12 +24,12 @@ const styles = {
     color: chromajs(colors['Light Blue']).darken(2)
   },
   warning: {
-    backgroundColor: chromajs(colors['BG Alert']).luminance(0.75),
-    color: chromajs(colors['BG Alert']).darken(3)
+    backgroundColor: chromajs(colors['Yellow']).luminance(0.75),
+    color: chromajs(colors['Yellow']).darken(3)
   },
   danger: {
-    backgroundColor: chromajs(colors['BG Error']).luminance(0.75),
-    color: chromajs(colors['BG Error']).darken(2)
+    backgroundColor: chromajs(colors['Status Error']).luminance(0.75),
+    color: chromajs(colors['Status Error']).darken(2)
   },
 };
 

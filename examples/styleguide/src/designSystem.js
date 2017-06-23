@@ -15,8 +15,6 @@ export const colors = {
   'BG Oil': '#5C666F',
   'BG Gray': '#E3E5E7',
   'BG Light': '#F5F7F9',
-  'BG Alert': '#F0CC00',
-  'BG Error': '#FF3E00',
   'Status Success': '#7ED321',
   'Status Error': '#FF3E00'
 };
